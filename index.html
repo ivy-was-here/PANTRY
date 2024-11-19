@@ -1,0 +1,77 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@300;400;600&display=swap" rel="stylesheet">
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Pantry & Recipe App</title>
+  <link rel="stylesheet" href="style.css">
+</head>
+<body>
+  <h1>Pantry & Recipes</h1>
+
+  <!-- Navigation to Meal Planner -->
+  <a href="settings.html" class="button">Settings</a>
+  <a href="mealplanner.html" class="button">Go to Meal Planner</a>
+
+  <!-- Pantry Section -->
+  <section id="pantrySection">
+    <h2>My Pantry</h2>
+    <form id="addItemForm">
+      <input type="text" id="itemName" placeholder="Item Name" required>
+      <select id="itemCategory" required>
+        <option value="produce">Produce</option>
+        <option value="dairy">Dairy</option>
+        <option value="meat">Meat</option>
+        <option value="pantry">Pantry/Ingredients</option>
+        <option value="other">Other</option>
+      </select>
+      <input type="date" id="expiryDate">
+      <label>
+        <input type="checkbox" id="noExpiry"> No Expiry
+      </label>
+      <button type="submit">Add Item</button>
+    </form>
+    <ul id="pantryList"></ul>
+    <a href="pantry.html" class="button">View All Pantry Items</a>
+  </section>
+
+  <!-- Recipe Book Section -->
+  <section id="recipeBookSection">
+    <h2>My Recipe Book</h2>
+    <form id="addRecipeForm">
+      <input type="text" id="recipeName" placeholder="Recipe Name" required>
+      <textarea id="recipeIngredients" placeholder="Ingredients (comma-separated)" required></textarea>
+      <textarea id="recipeInstructions" placeholder="Instructions" required></textarea>
+      
+      <!-- Nutritional Tags -->
+      <fieldset>
+        <legend>Nutritional Tags</legend>
+        <label>
+          <input type="checkbox" name="tags" value="Low Calorie"> Low Calorie
+        </label>
+        <label>
+          <input type="checkbox" name="tags" value="High Protein"> High Protein
+        </label>
+        <label>
+          <input type="checkbox" name="tags" value="Vegetarian"> Vegetarian
+        </label>
+        <label>
+          <input type="checkbox" name="tags" value="Gluten-Free"> Gluten-Free
+        </label>
+      </fieldset>
+      
+      <button type="submit">Add Recipe</button>
+    </form>
+    <ul id="recipeList"></ul>
+    <a href="recipes.html" class="button">View All Recipes</a>
+  </section>
+
+<!-- Fetch Recipe Section -->
+<!-------------------------->
+
+
+  <script src="app.js"></script>
+</body>
+</html>
+

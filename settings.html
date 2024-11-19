@@ -1,0 +1,28 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@300;400;600&display=swap" rel="stylesheet">
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Settings</title>
+  <link rel="stylesheet" href="style.css">
+</head>
+<body>
+  <header>
+    <h1>Settings</h1>
+    <a href="index.html" class="button">Home</a>
+  </header>
+
+  <main>
+    <section id="backupSection">
+      <h2>Backup</h2>
+      <p>This app runs on local storage. Save your data regularly or after large uploads, just in case you need to re-upload it later.</p>
+      <button id="exportData">Export Backup</button>
+      <label for="importFile" class="button">Import Backup</label>
+      <input type="file" id="importFile" accept=".json">
+    </section>
+  </main>
+
+  <script src="backup.js"></script>
+</body>
+</html>

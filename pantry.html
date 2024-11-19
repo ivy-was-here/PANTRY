@@ -1,0 +1,35 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Pantry Inventory</title>
+  <link rel="stylesheet" href="style.css">
+</head>
+<body>
+  <h1>Pantry Inventory</h1>
+  
+  <!-- Return to Home Button -->
+  <a href="index.html" class="button">Return to Home</a>
+
+  <!-- Search and Filter Section -->
+  <div id="searchFilterSection">
+    <input type="text" id="searchBox" placeholder="Search for items...">
+    <select id="filterOptions">
+      <option value="none">No Filter</option>
+      <option value="expiring1">Expiring in 1 week</option>
+      <option value="expiring2">Expiring in 2 weeks</option>
+      <option value="recentlyAdded">Recently Added</option>
+      <option value="oldestAdded">Oldest Added</option>
+    </select>
+    <button id="applyFilter">Apply Filter</button>
+  </div>
+
+  <!-- Pantry List Section -->
+  <div id="pantryCategories">
+    <!-- Categories and items will be dynamically added here -->
+  </div>
+
+  <script src="pantry.js"></script>
+</body>
+</html>
